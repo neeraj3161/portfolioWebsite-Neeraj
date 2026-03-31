@@ -1,39 +1,42 @@
-// src/projectsData.js
 export const projects = [
   {
     id: 1,
-    title: "WhatsApp Contacts Scraper",
+    title: "DocuMind-AI",
+    featured: true,
     description:
-"Extract WhatsApp contacts by processing screen-recorded frames and converting them into structured data — no API required.",  
-  stack: "JavaScript • OCR • Image Processing",
-    live: "hhttps://yd6s33-3000.csb.app/",
-    github: "https://github.com/neeraj3161/whatsappscrapperreactjs",
+      "AI-powered document Q&A system with real-time chat and semantic search.",
+    highlights: [
+      "RAG architecture with embeddings",
+      "Real-time WebSocket chat",
+      "Optimized retrieval accuracy",
+    ],
+    stack: "React, Next.js, FastAPI, OpenAI, PostgreSQL",
+    github: "https://github.com/neeraj3161/DocuMind_AI",
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
+    title: "GateLink",
     description:
-      "Real-time analytics and KPI tracking for business stakeholders with role-based access.",
-    stack: "React • Node.js • PostgreSQL",
-    live: "https://your-analytics-dashboard.com",
-    github: "",
+      "Real-time IoT gate automation system with instant command execution.",
+    highlights: [
+      "WebSocket-based communication",
+      "ESP8266 hardware integration",
+      "Voice command support",
+    ],
+    stack: "FastAPI, WebSockets, ESP8266",
+    github: "https://github.com/neeraj3161/GateLink",
   },
   {
     id: 3,
-    title: "E-Commerce Platform",
+    title: "Gym Management App",
     description:
-      "Full-stack store with cart, checkout, admin panel and payment integration.",
-    stack: "Next.js • .NET API • PostgreSQL",
-    live: "https://your-store.com",
-    github: "https://github.com/your-user/ecommerce",
-  },
-  {
-    id: 4,
-    title: "Task Manager",
-    description:
-      "Productivity web app for teams with tags, status, comments and activity tracking.",
-    stack: "ASP.NET • React • Redis",
-    live: "https://your-task-manager.com",
-    github: "",
+      "Production mobile app used for managing gym operations with offline support.",
+    highlights: [
+      "Used by real users (2+ years)",
+      "Offline-first SQLite architecture",
+      "Reduced operational cost",
+    ],
+    stack: "React Native, SQLite",
+    github: "https://github.com/neeraj3161/EzGymApp",
   },
 ];

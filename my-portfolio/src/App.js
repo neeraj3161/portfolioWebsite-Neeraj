@@ -1,9 +1,11 @@
-// src/App.js
+import { useState } from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       {/* NAVBAR */}
@@ -13,30 +15,37 @@ function App() {
           <span className="nav-name">NEERAJ TRIPATHI</span>
         </div>
 
-        <nav className="nav-links">
-          <NavLink
-            to="/"
-            end
+        {/* HAMBURGER */}
+        <div
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+
+        {/* NAV LINKS */}
+        <nav className={`nav-links ${menuOpen ? "show" : ""}`}>
+          <NavLink to="/" end onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
-            }
-          >
+            }>
             Home
           </NavLink>
 
-          <NavLink
-            to="/projects"
+          <NavLink to="/projects" onClick={() => setMenuOpen(false)}
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
-            }
-          >
+            }>
             Projects
           </NavLink>
-        </nav>
 
-        <a href="#contact" className="btn-primary nav-cta">
-          Hire Me
-        </a>
+          <a href="#contact" className="btn-primary nav-cta"
+             onClick={() => setMenuOpen(false)}>
+            Hire Me
+          </a>
+        </nav>
       </header>
 
       {/* PAGES */}
@@ -48,7 +57,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        © {new Date().getFullYear()} Neeraj Tripathi — Built with Passion & Precision
+        © {new Date().getFullYear()} Neeraj Tripathi 
       </footer>
     </div>
   );
