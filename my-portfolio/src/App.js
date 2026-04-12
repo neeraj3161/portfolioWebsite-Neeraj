@@ -11,7 +11,7 @@ function App() {
       {/* NAVBAR */}
       <header className="nav">
         <div className="nav-left">
-          <span className="logo-mark" />
+          {/* <span className="logo-mark" /> */}
           <span className="nav-name">NEERAJ TRIPATHI</span>
         </div>
 
