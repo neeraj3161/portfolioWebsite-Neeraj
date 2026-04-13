@@ -45,7 +45,7 @@ function Home() {
          <div className="hero-right">
   <div className="hero-image-wrapper">
     <img
-      src="/profilePic.jpg"
+      src="/profilePic.JPG"
       alt="Neeraj Tripathi"
       className="hero-image"
       style={{alignItems: 'center',}}
