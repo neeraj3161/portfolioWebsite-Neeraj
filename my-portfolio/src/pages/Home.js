@@ -213,7 +213,7 @@ function Home() {
 
             <div className="social-links">
               <a
-                href="https://www.linkedin.com/neeraj3161"
+                href="https://www.linkedin.com/in/neeraj3161"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -223,7 +223,7 @@ function Home() {
                 GitHub
               </a>
               <a
-                href="https://www.neerajtripathi.com"
+                href="https://neeraj31.vercel.app"
                 target="_blank"
                 rel="noreferrer"
               >
